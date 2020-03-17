@@ -1,0 +1,63 @@
+*, html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #e4f9f5;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.calculator-app {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-pad {
+  border: 1px solid #11999e;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+}
+
+.number-pad > button {
+  font-size: 1.5rem;
+  background-color: #30e3ca;
+}
+
+.number-pad > button:hover {
+  background-color: #40514e;
+  color: white;
+}
+
+.span-three {
+  grid-column: span 3;
+}
+
+.output-screen {
+  margin-top: 10px;
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output-screen .previous-screen {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.output-screen .current-screen {
+  color: white;
+  font-size: 2.5rem;
+}
